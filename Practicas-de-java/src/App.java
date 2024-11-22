@@ -44,10 +44,10 @@ public class App{
             if (tipoComida == REGULAR || tipoComida == VEGETARIANO) {
                 mostrarMenu(tipoComida);
                 System.out.println("\nSeleccione el plato (1 o 2):");
-                int plato = sc.nextInt();
+                int platoSeleccionado = sc.nextInt();
         
-                if (plato == 1 || plato == 2) {
-                    total += procesarPedido(tipoComida, plato - 1); // -1 porque el array empieza en 0
+                if (platoSeleccionado == 1 || platoSeleccionado == 2) {
+                    total += procesarPedido(tipoComida, platoSeleccionado - 1); // -1 porque el array empieza en 0
                 } else {
                     System.out.println("Opción no válida. Intente nuevamente.");
                 }
